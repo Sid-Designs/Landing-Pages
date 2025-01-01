@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #ededed;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.cntSec {
+    height: 100%;
+    width: 100%;
+}
+
+.cntSec .navSec {
+    height: 25vh;
+    display: flex;
+    padding: 20px 40px;
+}
+
+.cntSec .navSec .navSec1 {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+}
+
+.cntSec .navSec .navSec1 .box {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    cursor: pointer;
+    rotate: 45deg;
+}
+
+.cntSec .navSec .navSec2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cntSec .navSec .navSec2 .navLink {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+    cursor: pointer;
+    line-height: 1.3;
+}
+
+.cntSec .navSec .navSec2 h4 {
+    text-align: right;
+    width: 100%;
+    cursor: pointer;
+}
+
+.cntSec .mainTxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: fit-content;
+    height: 60vh;
+}
+
+.cntSec .txtSec {
+    list-style: none;
+    font-size: 6vw;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.cntSec .txtSec li {
+    font-weight: 400;
+    line-height: 1;
+}
+
+.cntSec .txtSec li:nth-of-type(2n) {
+    text-align: right;
+}
+
+.cntSec .subTxt {
+    height: 15vh;
+}
+
+.cntSec .subTxt p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 20px 40px;
+    height: 100%;
+    width: 100%;
+    font-size: 1.2vw;
+}
+
+.vidSec {
+    min-height: 40vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.vidSec .vidWrap {
+    height: 95%;
+    width: 90%;
+    position: relative;
+}
+
+.vidSec .vidWrap video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.vidSec .vidWrap .box {
+    height: 60px;
+    width: 60px;
+    background-color: red;
+    position: absolute;
+    top: 45%;
+    left: -30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ededed;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+@media (min-width: 800px) {
+    .vidSec .vidWrap {
+        height: 95%;
+        width: 70%;
+    }
+
+    .vidSec .vidWrap video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .cntSec .subTxt p {
+        font-size: 1.7vw;
+    }
+
+    .vidSec .vidWrap {
+        height: 100%;
+        width: 100%;
+    }
+
+    .cntSec .txtSec {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .cntSec .navSec {
+        height: 10vh;
+        padding: 20px;
+    }
+
+    .cntSec .navSec .navSec2 .navLink {
+        display: none;
+    }
+
+    .cntSec .navSec .navSec1 .box {
+        height: 20px;
+        width: 20px;
+    }
+
+    .cntSec .mainTxt {
+        height: fit-content;
+    }
+
+    .cntSec .txtSec {
+        height: fit-content;
+        font-size: 12vw;
+        padding: 20px;
+    }
+
+
+    .cntSec .subTxt p {
+        font-size: 3vw;
+        padding: 20px;
+    }
+
+    .vidSec {
+        width: 100%;
+    }
+
+    .vidSec .vidWrap {
+        width: 90%;
+    }
+
+    .vidSec .vidWrap video {
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .vidSec .vidWrap .box {
+        display: none;
+    }
+}
+
+@media (width<200px) {
+
+    * {
+        height: fit-content;
+    }
+
+    .cntSec .navSec {
+        padding: 15px 20px;
+    }
+
+    .cntSec .navSec .navSec1 .box {
+        height: 15px;
+        width: 15px;
+    }
+
+    .cntSec .txtSec {
+        padding-bottom: 10px;
+    }
+
+    .vidSec .vidWrap video {
+        height: 100vh;
+        padding: 10px;
+    }
+}
+
+@media (max-width:900px) and (orientation: landscape) {
+    .cntSec .navSec .navSec2 .navLink {
+        display: none;
+    }
+
+    .cntSec .subTxt p {
+        font-size: 1vw;
+    }
+
+    .vidSec .vidWrap video {
+        object-position: top;
+        height: 130vh;
+    }
+}
+
+/* @media (max-width:900px) and (orientation: landscape) {
+} */
