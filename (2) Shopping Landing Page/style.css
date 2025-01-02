@@ -101,8 +101,10 @@ section .navSec p:nth-child(2):after{
 }
 
 footer{
-    background: url('adrian-ordonez-P0W27GRvyww-unsplash.jpg') center center;
+    background: url('image (2).png') center center;
     height: 100%; width: 100%;
+    background-size: cover;
+    max-height: 300px;
 }
 
 .bag{
